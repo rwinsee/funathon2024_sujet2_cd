@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: funathon2024-sujet2-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - https://dashboard-Rplane.kub.sspcloud.fr/
+  rules:
+  - host: https://dashboard-Rplane.kub.sspcloud.fr/
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: funathon2024-sujet2-service
+            port:
+              number: 80
