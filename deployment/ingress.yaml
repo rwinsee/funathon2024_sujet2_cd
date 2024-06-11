@@ -8,9 +8,9 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - https://dashboard-Rplane.kub.sspcloud.fr/
+    - rplane-dashboard.kub.sspcloud.fr
   rules:
-  - host: https://dashboard-Rplane.kub.sspcloud.fr/
+  - host: rplane-dashboard.kub.sspcloud.fr
     http:
       paths:
       - path: /
