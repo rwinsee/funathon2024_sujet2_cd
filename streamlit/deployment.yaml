@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: funathon2024-sujet2-streamlit-deployment
+  name: funathon2024-streamlit-deployment
   labels:
-    app: funathon2024-sujet2-streamlit
+    app: funathon2024-streamlit
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: funathon2024-sujet2-streamlit
+      app: funathon2024-streamlit
   template:
     metadata:
       labels:
-        app: funathon2024-sujet2-streamlit
+        app: funathon2024-streamlit
     spec:
       containers:
-      - name: funathon2024-sujet2-streamlit
+      - name: funathon2024-streamlit
         image: inseefrlab/funathon2024-sujet2:python
         ports:
         - containerPort: 8000
