@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: funathon2024-sujet2-deployment
+  labels:
+    app: funathon2024-sujet2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: funathon2024-sujet2
+  template:
+    metadata:
+      labels:
+        app: funathon2024-sujet2
+    spec:
+      containers:
+      - name: funathon2024-sujet2
+        image: inseefrlab/funathon2024-sujet2
+        ports:
+        - containerPort: 3838
