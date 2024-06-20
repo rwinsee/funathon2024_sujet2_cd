@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: funathon2024-sujet2
-        image: inseefrlab/funathon2024-sujet2
+        image: inseefrlab/funathon2024-sujet2:shiny-test2
         ports:
         - containerPort: 3838

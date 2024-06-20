@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: funathon2024-streamlit
-        image: inseefrlab/funathon2024-sujet2:python
+        image: inseefrlab/funathon2024-sujet2:streamlit-test2
         ports:
         - containerPort: 8000
