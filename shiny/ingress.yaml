@@ -8,9 +8,9 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - rwinsee-dashboard.kub.sspcloud.fr
+    - rwinsee-dashboard.lab.sspcloud.fr
   rules:
-  - host: rwinsee-dashboard.kub.sspcloud.fr
+  - host: rwinsee-dashboard.lab.sspcloud.fr
     http:
       paths:
       - path: /
