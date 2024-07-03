@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
       - name: funathon2024-sujet2
-        image: rwinsee/funathon2024:shiny-test3
+        image: rwinsee/funathon2024:shiny-test2
+        imagePullPolicy: Always
         ports:
         - containerPort: 3838
